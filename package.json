@@ -1,0 +1,14 @@
+{
+  "name": "sample-gcp-cloud-run-node-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "OTEL_LOG_LEVEL=debug HYPERDX_API_KEY=xxxxxxxx OTEL_SERVICE_NAME=gcp-node-app npx opentelemetry-instrument index.js"
+  },
+  "dependencies": {
+    "@hyperdx/node-opentelemetry": "^0.1.4",
+    "express": "^4.18.2",
+    "winston": "^3.9.0"
+  }
+}
